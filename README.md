@@ -13,7 +13,8 @@ Contributing
 ![Static Badge](https://img.shields.io/badge/python-orange)
 
 ## Classes
-1. Customer
+
+## Customer
 The Customer class represents a customer who can leave reviews for restaurants.
 
 ### Attributes:
@@ -32,7 +33,7 @@ num_negative_reviews(): Get the number of negative reviews left by the customer.
 
 has_reviewed_restaurant(restaurant): Check if the customer has reviewed a specific restaurant.
 
-2. Restaurant
+## Restaurant
 The Restaurant class represents a restaurant that can receive reviews from customers.
 
 ### Attributes:
@@ -52,7 +53,7 @@ average_star_rating(): Get the average star rating of the restaurant.
 
 top_two_restaurants(): Get the top two restaurants based on their average star ratings.
 
-3. Reviews
+## Reviews
 The reviews represents a review left by a customer for a restaurant.
 
 ### Attributes:
