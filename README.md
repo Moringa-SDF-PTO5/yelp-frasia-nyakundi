@@ -16,10 +16,8 @@ Contributing
 1. Customer
 The Customer class represents a customer who can leave reviews for restaurants.
 
-Attributes:
-
-first_name: The first name of the customer.
-last_name: The last name of the customer.
+### Attributes:
+Should have first_name and last_name of the customer
 reviews: A list of reviews left by the customer.
 
 Methods:
