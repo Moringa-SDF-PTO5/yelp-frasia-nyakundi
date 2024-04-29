@@ -135,3 +135,34 @@ class Reviews:
             raise TypeError("Restaurant must be type of Restaurant")
         self._restaurant = value
 
+#Example
+if __name__ == "__main__":
+    # Create some customers
+    customer1 = Customer("Salma", "Njeri")
+    customer2 = Customer("Joseph", "Brown")
+
+    # Create some restaurants
+    restaurant1 = Restaurant("KFC")
+    restaurant2 = Restaurant("Chicken Inn")
+
+    # Create some reviews
+    review1 = Reviews(customer1, restaurant1, 5)
+    review2 = Reviews(customer2, restaurant1, 2.2)
+    review3 = Reviews(customer1, restaurant2, 4)
+
+    # Add reviews to the customers' lists
+    customer1.add_review(review1)
+    customer1.add_review(review3)
+    customer2.add_review(review2)
+
+    # Test the methods
+    print("Salma Njeri's reviews:")
+    for review in customer1.get_reviews():
+        print(f"- Restaurant: {review.restaurant.name} - Rating: {review.rating}")
+
+    print("\nRestaurants reviewed by Salma Njeri:")
+    for restaurant in customer1.restaurants():
+        print(f"- {restaurant.name}")
+
+    print("\nNumber of negative reviews by Salma Njeri:", customer1.num_negative_reviews())
+    print("Has Salma Njeri reviewed Chicken Inn?", customer1.has_reviewed_restaurant(restaurant2))
